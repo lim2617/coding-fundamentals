@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Breadcrumb</title>
+    <style>
+        .breadcrumb{
+            padding: 0.5rem 2rem;
+            background-color: rgb(227, 224, 224);
+            list-style: none;
+        }
+
+        li{
+            display: inline;
+        }
+
+        li:nth-child(n+2)::before{
+            content: "/";
+            padding: 0.8rem;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <ul class="breadcrumb">  
+        <li><a href="#">Home</a></li>  
+        <li><a href="#">Users</a></li>  
+        <li><a href="#">Choy Siew Lim</a></li>  
+        <li>Info</li>
+    </ul>
+</body>
+</html>
