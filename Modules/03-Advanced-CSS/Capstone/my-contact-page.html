@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./my-contact-page.css">
+    <script src="https://kit.fontawesome.com/f3477b3dfe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="flex">
+            <div class="nav__left flex">
+                <a href="https://freeimage.host/i/HUChSls"><img class="logo" src="https://iili.io/HUChSls.md.png" alt="HUChSls.md.png"></a>
+                <a href="#">Our Story</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Media</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="nav__right">
+                <a href="#">Sign Up</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+        <section class="heading">
+            <h1>Get In Touch</h1>
+            <p>Our team of customer care is ready to hear from you. Send us a message and we will reply as fast as we can.</p>
+        </section>
+    </header>
+    
+    <main class="contact__container flex">
+        <section class="contact__info flex">
+            <h1>Our Company</h1>
+            <p>Not sure where to start? Visit our office or check us out on social media.</p>
+            <div class="correspondence flex">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <p>Let's Talk</p>
+                    <p>+603-12345678</p>
+                </div>
+            </div>
+            <div class="correspondence flex">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <p>General Support</p>
+                    <p>support@leaf.com</p>
+                </div>
+            </div>
+            <div class="contact__social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </section>
+
+        <section class="contact__form flex">
+            <h1>Drop Us A Message</h1>
+            <form action="" class="flex">
+                <div class="form__firstname">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="form__lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form__email">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form__tel">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+                <div class="form__subject">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form__message">
+                    <label for="message">Your Message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="76" rows="5" placeholder="Write us a message..." maxlength="500" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
